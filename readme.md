@@ -13,3 +13,9 @@
 * Copied the two GMaps related folders from the pip3 lib folder to the Anaconda one
 * Restart Anaconda to load GMaps into the environment (I think this is necessary)
 * Test with 'import googlemaps'. I don't think I would want to add my pip3 path to Anaconda even if it were possible because it seems like a real pain to keep both updated and it would cause a lot of conflicts
+
+ ## in regards to get_gdf() method
+* b/c GeoDataFrame points are just arbitrary points, need a CRS (coordinate reference system) to tell Python how those points are related to places on Earth
+* http://geopandas.org/projections.html
+* 'epsg:4326' uses WGS84 as its reference
+    * very interesting: http://gisgeography.com/wgs84-world-geodetic-system/
